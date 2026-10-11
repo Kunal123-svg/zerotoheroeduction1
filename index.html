@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marathi Trader Abhi</title>
+
+<title>ZERO TO HERO TRADING</title>
 
 <!-- Meta Pixel Code -->
 <script>
@@ -15,176 +16,373 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1238207425191008');
+fbq('init', '28325945480412726');
 fbq('track', 'PageView');
 </script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=28325945480412726&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
 <style>
-
 *{
-box-sizing:border-box;
-margin:0;
-padding:0;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    width:100%;
+    min-height:100%;
 }
 
 body{
-font-family:Arial;
-background:#0b0f19;
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
+    min-height:100vh;
+    background:#f4f6fa;
+    color:#16263a;
+    overflow-x:hidden;
 }
 
-.container{
-width:380px;
-background:#111827;
-border-radius:25px;
-padding:30px;
-text-align:center;
-box-shadow:0 10px 40px rgba(0,0,0,0.7);
+.page{
+    width:100%;
+    max-width:480px;
+    min-height:100vh;
+    margin:auto;
+    padding:55px 32px 35px;
 }
 
-/* LOGO */
-
+/* DP */
 .logo{
-width:120px;
-height:120px;
-border-radius:100px;
-object-fit:cover;
-margin-bottom:15px;
-animation:float 3s ease-in-out infinite;
+    width:58px;
+    height:58px;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
+    margin-bottom:30px;
+    background:#fff;
+    box-shadow:0 5px 14px rgba(0,0,0,.10);
+    animation:dpMove 3s ease-in-out infinite;
 }
 
-@keyframes float{
-0%{transform:translateY(0)}
-50%{transform:translateY(-10px)}
-100%{transform:translateY(0)}
+@keyframes dpMove{
+    0%,100%{
+        transform:translateX(-3px);
+    }
+    50%{
+        transform:translateX(3px);
+    }
 }
 
-h1{
-font-size:28px;
-margin-bottom:5px;
+/* NAME */
+.title{
+    color:#a87912;
+    font-size:27px;
+    line-height:1.15;
+    font-weight:700;
+    letter-spacing:-.4px;
+    margin-bottom:34px;
 }
 
-.badge{
-background:linear-gradient(45deg,#ff512f,#ff9966);
-padding:10px 20px;
-border-radius:30px;
-display:inline-block;
-margin:15px 0;
-font-weight:bold;
-}
-
-.telegram-btn{
-display:block;
-margin:20px 0;
-padding:18px;
-border-radius:50px;
-background:linear-gradient(90deg,#00c6ff,#0072ff);
-color:white;
-font-weight:bold;
-font-size:18px;
-text-decoration:none;
-animation:blink 1.2s infinite;
-}
-
-.telegram-btn img{
-width:22px;
-vertical-align:middle;
-margin-right:8px;
-}
-
-@keyframes blink{
-0%{opacity:1;box-shadow:0 0 10px #00c6ff;}
-50%{opacity:0.7;box-shadow:0 0 25px #00c6ff;}
-100%{opacity:1;box-shadow:0 0 10px #00c6ff;}
-}
-
-.text{
-margin-top:15px;
-line-height:1.6;
-font-size:16px;
-}
-
-.highlight{
-color:#ff6b6b;
-font-weight:bold;
-}
-
-.profit{
-color:#ffd700;
-font-size:20px;
-margin:15px 0;
-font-weight:bold;
-}
-
+/* FEATURES */
 .features{
-margin-top:15px;
-text-align:left;
-line-height:2;
-font-size:15px;
+    display:flex;
+    flex-direction:column;
+    gap:17px;
+    margin-bottom:34px;
 }
 
-.footer{
-margin-top:20px;
-font-size:13px;
-color:#9ca3af;
+.feature{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:#17283c;
+    font-size:14px;
+    line-height:1.2;
+    font-weight:400;
 }
 
+.icon{
+    width:45px;
+    height:45px;
+    min-width:45px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#fff;
+    color:#ad8222;
+    font-size:17px;
+    border:1px solid rgba(120,130,145,.12);
+    box-shadow:0 5px 13px rgba(30,45,65,.09);
+}
+
+/* TIMER */
+.timer-row{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:24px;
+}
+
+.progress-container{
+    position:relative;
+    flex:1;
+    height:7px;
+    background:#ccd4de;
+    border-radius:20px;
+}
+
+.progress-bar{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:#b18922;
+    border-radius:20px;
+    transition:width 1s linear;
+}
+
+.progress-dot{
+    position:absolute;
+    top:50%;
+    right:-4px;
+    width:19px;
+    height:19px;
+    transform:translateY(-50%);
+    border-radius:50%;
+    background:#b18922;
+    box-shadow:0 0 0 4px rgba(177,137,34,.13);
+}
+
+.timer{
+    min-width:48px;
+    color:#17283c;
+    font-size:14px;
+    font-weight:600;
+    text-align:right;
+}
+
+/* TELEGRAM BUTTON */
+.telegram-btn{
+    width:100%;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    border-radius:32px;
+    background:#092637;
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    box-shadow:0 10px 20px rgba(8,30,48,.16);
+}
+
+.telegram-icon{
+    width:23px;
+    height:23px;
+    border-radius:50%;
+    background:#fff;
+    color:#092637;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* SUBSCRIBERS */
+.subscribers{
+    text-align:center;
+    margin-top:17px;
+    color:#7c8795;
+    font-size:13px;
+    font-weight:400;
+}
+
+/* DISCLAIMER */
+.disclaimer{
+    text-align:center;
+    margin-top:30px;
+    color:#7c8795;
+    font-size:10px;
+    line-height:1.55;
+    font-weight:400;
+}
+
+/* ADS MANAGED BY KUNAL */
+.ads-managed {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 11px;
+    color: #7c8795;
+}
+
+.ads-managed a {
+    color: #a87912;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ads-managed a:hover {
+    text-decoration: underline;
+}
+
+/* SMALL MOBILE */
+@media(max-width:380px){
+    .page{
+        padding:45px 24px 30px;
+    }
+    .logo{
+        width:54px;
+        height:54px;
+        margin-bottom:26px;
+    }
+    .title{
+        font-size:25px;
+        margin-bottom:30px;
+    }
+    .features{
+        gap:15px;
+        margin-bottom:30px;
+    }
+    .feature{
+        font-size:13px;
+        gap:13px;
+    }
+    .icon{
+        width:42px;
+        height:42px;
+        min-width:42px;
+        font-size:16px;
+    }
+    .timer-row{
+        margin-bottom:21px;
+    }
+    .telegram-btn{
+        height:56px;
+        font-size:15px;
+    }
+    .subscribers{
+        font-size:12px;
+        margin-top:15px;
+    }
+    .disclaimer{
+        font-size:9px;
+        margin-top:26px;
+    }
+    .ads-managed {
+        font-size: 10px;
+        margin-top: 12px;
+    }
+}
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="page">
 
-<img src="logo.png" class="logo">
+    <!-- DP -->
+    <img
+        src="logo.png"
+        class="logo"
+        alt="ZERO TO HERO"
+    >
 
-<h1>Marathi Trader Abhi</h1>
-<div>💸🏆</div>
+    <!-- NAME -->
+    <h1 class="title">ZERO TO HERO TRADING</h1>
 
-<div class="badge">📊 17 Years Trading Experience</div>
+    <!-- FEATURES -->
+    <div class="features">
+        <div class="feature">
+            <div class="icon">▥</div>
+            <span>Daily Intraday Calls</span>
+        </div>
+        <div class="feature">
+            <div class="icon">↗️</div>
+            <span>Swing Trading Ideas</span>
+        </div>
+        <div class="feature">
+            <div class="icon">◎</div>
+            <span>Entry &amp; Exit Levels</span>
+        </div>
+        <div class="feature">
+            <div class="icon">♢</div>
+            <span>Risk Management</span>
+        </div>
+    </div>
 
-<div>👇👇👇</div>
+    <!-- TIMER -->
+    <div class="timer-row">
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+            <div class="progress-dot" id="progressDot"></div>
+        </div>
+        <div class="timer" id="timer">00:55</div>
+    </div>
 
-<a class="telegram-btn" href="https://t.me/+Xz3IA9gyrkdiYmI9">
+    <!-- TELEGRAM -->
+    <a
+        href="https://t.me/+ACR9P0J2i1BjYWI1"
+        class="telegram-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="fbq('track', 'Lead');">
 
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+        <span class="telegram-icon">➤</span>
+        <span>Join Telegram</span>
+    </a>
 
-JOIN TELEGRAM CHANNEL
+    <!-- SUBSCRIBERS -->
+    <div class="subscribers">
+        37,000+ subscribers
+    </div>
 
-</a>
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+        Risk Disclaimer: Investment in Securities market are subject to market risks.<br>
+        Please read all the related documents carefully before Investing.
+    </div>
 
-<div class="text">
-
-Do you want to make money from trading?<br><br>
-
-<span class="highlight">
-If yes, then click on the Telegram button above 🚀
-</span>
+    <!-- ADS MANAGED BY KUNAL -->
+    <div class="ads-managed">
+        Ads Managed by <a href="https://t.me/+jE7sEbzR23gwM2U1" target="_blank" rel="noopener noreferrer">Kunal</a>
+    </div>
 
 </div>
 
-<div class="profit">
-💎 DAILY PROFIT GUARANTEE 💎
-</div>
+<script>
+let timeLeft = 55;
+const totalTime = 55;
 
-<div class="features">
+const timer = document.getElementById("timer");
+const progressBar = document.getElementById("progressBar");
+const progressDot = document.getElementById("progressDot");
 
-📊 Live Daily Trades directly from my portfolio<br>
-🔥 Exclusive Signals used by professionals<br>
-💯 High Accuracy with proven consistency<br>
-⚡ Instant Updates with real-time alerts
+function updateTimer(){
+    timer.textContent = "00:" + String(timeLeft).padStart(2,"0");
+    const percentage = (timeLeft / totalTime) * 100;
+    progressBar.style.width = percentage + "%";
+    progressDot.style.right = (100 - percentage) + "%";
 
-</div>
+    if(timeLeft <= 0){
+        clearInterval(countdown);
+        timer.textContent = "00:00";
+        progressBar.style.width = "0%";
+        progressDot.style.right = "100%";
+        return;
+    }
+    timeLeft--;
+}
 
-<div class="footer">
-© 2026 Marathi Trader Abhi - All rights reserved
-</div>
-
-</div>
+updateTimer();
+const countdown = setInterval(updateTimer,1000);
+</script>
 
 </body>
 </html>
